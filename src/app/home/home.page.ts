@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {AuthService} from '../servicios/auth.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+    constructor(private authServices: AuthService, private router: Router) {}
+    public cerrarSesion() {
+        this.authServices.logout();
+    }
 }

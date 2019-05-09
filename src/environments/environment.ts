@@ -6,6 +6,15 @@ export const environment = {
   production: false
 };
 
+export const firebaseConfig  = {
+  apiKey: 'AIzaSyBCkJDHSH7_jWhIfS1Y61-Bf44GEQFneUo',
+  authDomain: 'chat-privated.firebaseapp.com',
+  databaseURL: 'https://chat-privated.firebaseio.com',
+  projectId: 'chat-privated',
+  storageBucket: 'chat-privated.appspot.com',
+  messagingSenderId: '500190367722'
+};
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
